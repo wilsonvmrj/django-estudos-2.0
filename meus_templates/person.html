@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+            <ul>
+            {% for person in persons  %}
+
+                    <li>  {{ person.first_name }} {{ person.last_name }} </li>
+                        <ul>
+                            <li>{{ person.age }}</li>
+                            <li>{{ person.bio }}</li>
+                        </ul>
+
+            {% endfor %}
+            </ul>
+</body>
+</html>
